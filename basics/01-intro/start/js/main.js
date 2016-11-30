@@ -3,8 +3,23 @@ $(document).ready(function(){
 //init ScrollMagic
 var controller = new ScrollMagic.Controller();
 
+//pin the intro
 
+var pinIntroScene = new ScrollMagic.Scene({
+	triggerElement: '#intro',
+	triggerHook: 0,
+	duration: '30%'
+})
+.setPin('#intro', {pushFollowers: false})
+.addTo(controller);
 
+var repinIntroScene = new ScrollMagic.Scene({
+	triggerElement: '#project01',
+	triggerHook: 0.5
+	// duration: 0
+})
+.setPin('#intro', {pushFollowers: false})
+.addTo(controller);
 // loop through each .project element
 $('.project').each(function(){
 

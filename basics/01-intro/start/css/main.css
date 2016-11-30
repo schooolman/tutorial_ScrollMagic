@@ -118,6 +118,11 @@ body {
     color: #F5876F;
 }
 
+#main {
+  position: relative;;
+  background-color: #FFF;
+}
+
 /* =Footer */
 .footer-container {
     text-align: center;
